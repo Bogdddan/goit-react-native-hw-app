@@ -2,16 +2,16 @@ import Post from "../../components/Post/Post";
 import { View, ScrollView, Text, Image } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, selectUID } from "../../redux/auth/authSelectors";
-import { selectPosts } from "../../redux/posts/postsSelectors";
+import { selectPosts } from "../../redux/posts/postSelectors";
 import { useEffect } from "react";
-import { fetchAllPosts } from "../../redux/posts/postsOperations";
+import { fetchAllPosts } from "../../redux/posts/postOperations";
 import {
   container,
   avatarWrapper,
   avatar,
   userName,
   userEmail,
-} from "./PostsScreenStyles";
+} from "./PostScreenStyles";
 
 const PostsScreen = ({ route, navigation }) => {
   const dispatch = useDispatch();
@@ -43,8 +43,8 @@ const PostsScreen = ({ route, navigation }) => {
             />
           </View>
           <View>
-            <Text style={userName}>{user.name}</Text>
-            <Text style={userEmail}>{user.email}</Text>
+            <Text style={userName}>Natali Romanova</Text>
+            <Text style={userEmail}>testgmail.com</Text>
           </View>
         </View>
         {posts.map((post) => (

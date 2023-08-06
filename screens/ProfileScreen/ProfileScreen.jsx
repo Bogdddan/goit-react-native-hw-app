@@ -4,7 +4,7 @@ import Avatar from "../../components/Avatar/Avatar";
 // import LogOutIcon from "../../../img/svg/LogOutIcon";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectPosts } from "../../redux/posts/postsSelectors";
+import { selectPosts } from "../../redux/posts/postSelectors";
 import { selectUser, selectUID } from "../../redux/auth/authSelectors";
 import { logOut } from "../../redux/auth/authOperations";
 import {
@@ -45,7 +45,7 @@ const ProfileScreen = ({ route, navigation }) => {
       <View
         style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
       >
-        <ImageBackground
+        <ImageBackground  
           source={require("../../assets/photo-bg.png")}
           style={{
             flex: 1,

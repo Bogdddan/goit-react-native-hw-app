@@ -5,8 +5,8 @@ import uuid from "react-native-uuid";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, selectUID } from "../../redux/auth/authSelectors";
-import { selectPosts } from "../../redux/posts/postsSelectors";
-import { addComment } from "../../redux/posts/postsOperations";
+import { selectPosts } from "../../redux/posts/postSelectors";
+import { addComment } from "../../redux/posts/postOperations";
 import {
   View,
   Text,
@@ -22,7 +22,7 @@ import {
   inputWrapper,
   input,
   pushBtn,
-} from "./CommentsScreenStyles";
+} from "./CommentsScreensStyles";
 
 const CommentsScreen = ({ route, navigation }) => {
   const dispatch = useDispatch();

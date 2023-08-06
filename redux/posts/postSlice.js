@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAllPosts, addPost, addComment, addLike } from "./postsOperations";
+import { fetchAllPosts, addPost, addComment, addLike } from "./postOperations";
 
 const postsSlice = createSlice({
   name: "posts",

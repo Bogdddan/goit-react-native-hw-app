@@ -32,9 +32,9 @@ const RegistrationScreen = () => {
         password,
       })
     );
-    // console.log("login:", login);
-    // console.log("email:", email);
-    // console.log("password:", password);
+    console.log("login:", login);
+    console.log("email:", email);
+    console.log("password:", password);
     navigation.navigate("Home");
   };
 

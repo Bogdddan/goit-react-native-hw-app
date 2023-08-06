@@ -5,7 +5,8 @@ import CommentsScreen from "./screens/CommentsScreen/CommentsScreen";
 import MapScreen from "./screens/MapScreen";
 import Home from "./screens/Home";
 import { useFonts } from "expo-font";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
+// import { useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from "@react-navigation/stack";
 import { Feather } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -90,3 +91,5 @@ export default function App() {
     </Provider>
   );
 }
+
+// 

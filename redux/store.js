@@ -12,7 +12,7 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 // import rootReducer from "./rootReducer";
 import { authReducer } from "./auth/authSlice";
-import { postsReducer } from "./posts/postsSlice";
+import { postsReducer } from "./posts/postSlice";
 
 const persistConfig = {
   key: "root",

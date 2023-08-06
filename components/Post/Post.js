@@ -1,10 +1,10 @@
 import MessageIcon from "../../assets/icons/MessageIcon";
 import ThumbsUpIcon from "../../assets/icons/ThumbsUpIcon";
-import MapIcon from "../../assets/icons/MapIcon";
+import MapIcon from "../../assets/icons/Maplcon";
 import PostImage from "../PostImage/PostImage";
 import { View, TouchableOpacity, Text } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
-import { addLike } from "../../redux/posts/postsOperations";
+import { addLike } from "../../redux/posts/postOperations";
 import { selectUID } from "../../redux/auth/authSelectors";
 
 import {

@@ -19,7 +19,7 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 import { selectUID } from "../../redux/auth/authSelectors";
-import { addPost } from "../../redux/posts/postsOperations";
+import { addPost } from "../../redux/posts/postOperations";
 
 const CreatePostsScreen = () => {
   const dispatch = useDispatch();
